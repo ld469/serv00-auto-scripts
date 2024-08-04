@@ -21,7 +21,8 @@ async function delayTime(ms) {
     const page = await browser.newPage();
 
     let url = `https://panel${panelnum}.serv00.com/login/?next=/`;
-
+    console.log('url：' +url);
+    
     try {
       // 修改网址为新的登录页面
       await page.goto(url);
